@@ -1,6 +1,6 @@
 
 // export const DOMAIN = 'http://localhost:3000';
-export const DOMAIN = 'https://thegreatestestatedeveloper.adoptedbyamurderousdukefamily.in.net';
+export const DOMAIN = 'https://the-greatestestate-developer.adoptedbyamurderousdukefamily.in.net';
 export const IMAGES_DOMAIN = 'https://images.onepiecemanga.in.net';
 
 export const MANGA_DESCRIPTION = `<a href="${DOMAIN}"><u>The Greatest Estate Developer</u></a> is a captivating novel that follows the journey of a visionary protagonist who rises to prominence in the cutthroat world of real estate development. Driven by ambition and a keen business acumen, they navigate through challenges and rivalries, aiming to build the most impressive estates and reshape the skyline of their city.`;
