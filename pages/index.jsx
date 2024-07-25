@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { DOMAIN, MANGA_NAME, MANGA_DESCRIPTION, MANGA_AUTHOR, MANGA_RELEASE, MANGA_STATUS, MANGA_ARTIST, MANGA_STUDIO, MANGA_GENRE, APP_DESCRIPTION, APP_NAME, MANGA_SUMMARY, COVER_IMG, AUTHOR_PAGE, LOGO_URL, URL_PREFIX, chaptersData, BEHIND_COVER_IMG, RelatedMangaLinks } from "@/config";
 import Head from "next/head";
+const AdSense = dynamic(() => import('@/components/Adsense'), { ssr: false });
 
 export default function Home() {
 
@@ -139,7 +140,7 @@ export default function Home() {
         </div>
 
 
-
+        <AdSense />
 
 
         <h2 id="readmanga" className="font-extrabold text-3xl my-10 px-4 text-center">
@@ -151,7 +152,7 @@ export default function Home() {
           {chapters.map((chapter) => (
             <div className="flex hover:scale-105 active:scale-95 transition-transform" key={chapter.number}>
               <a
-                onClick={handleRedirect}
+                // onClick={handleRedirect}
                 href={chapter.url} className="p-5 hover:underline">
                 <p className="w-[300px] text-center p-5 border border-l-8 border-[black] font-bold break-words">
                   {`${MANGA_NAME}, Chapter ${chapter.number}`}
@@ -193,7 +194,7 @@ export default function Home() {
 
 
 
-
+        <AdSense />
 
 
         <div className="bg-[black] relative">

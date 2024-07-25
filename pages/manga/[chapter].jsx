@@ -118,6 +118,8 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                     </div>
                 </div>
 
+                <AdSense />
+
                 {/* <div className='max-w-[1200px] mx-auto mb-5'>
                     {imageUrls.map((imageUrl, index) => (
                         <div className='allimages' key={index}>
@@ -138,7 +140,9 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                                 />
                             </div>
                             {(index === 0 || index === 2 || index === 4) && (
-                                <AdSense key={`ad-${index}`} />
+                                <div className='p-3'>
+                                    <AdSense key={`ad-${index}`} />
+                                </div>
                             )}
                         </React.Fragment>
                     ))}
